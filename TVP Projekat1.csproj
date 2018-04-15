@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E5DC08D-A004-4CA2-800D-27BB4DC309F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TVP_Projekat1</RootNamespace>
+    <AssemblyName>TVP Projekat1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administratori.cs" />
+    <Compile Include="AzuriranjeIzbornihLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AzuriranjeIzbornihLista.Designer.cs">
+      <DependentUpon>AzuriranjeIzbornihLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AzuriranjePredmeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AzuriranjePredmeta.Designer.cs">
+      <DependentUpon>AzuriranjePredmeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AzuriranjeSmera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AzuriranjeSmera.Designer.cs">
+      <DependentUpon>AzuriranjeSmera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AzuriranjeStudenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AzuriranjeStudenta.Designer.cs">
+      <DependentUpon>AzuriranjeStudenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrisanjeIzborneListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrisanjeIzborneListe.Designer.cs">
+      <DependentUpon>BrisanjeIzborneListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrisanjePredmeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrisanjePredmeta.Designer.cs">
+      <DependentUpon>BrisanjePredmeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrisanjeStudenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrisanjeStudenta.Designer.cs">
+      <DependentUpon>BrisanjeStudenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajIzbornuListu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajIzbornuListu.Designer.cs">
+      <DependentUpon>DodajIzbornuListu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodavanjePredmeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodavanjePredmeta.Designer.cs">
+      <DependentUpon>DodavanjePredmeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodavanjeSmer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodavanjeSmer.Designer.cs">
+      <DependentUpon>DodavanjeSmer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzbrisiSmer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzbrisiSmer.Designer.cs">
+      <DependentUpon>IzbrisiSmer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KorisnikMeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KorisnikMeni.Designer.cs">
+      <DependentUpon>KorisnikMeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logovanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logovanje.Designer.cs">
+      <DependentUpon>Logovanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzbornaLista.cs" />
+    <Compile Include="MeniAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniAdmin.Designer.cs">
+      <DependentUpon>MeniAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoviKorisnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoviKorisnik.Designer.cs">
+      <DependentUpon>NoviKorisnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Predmet.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Smer.cs" />
+    <Compile Include="DodajStudenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajStudenta.Designer.cs">
+      <DependentUpon>DodajStudenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistika predmeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistika predmeta.Designer.cs">
+      <DependentUpon>Statistika predmeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Studenti.cs" />
+    <EmbeddedResource Include="AzuriranjeIzbornihLista.resx">
+      <DependentUpon>AzuriranjeIzbornihLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AzuriranjePredmeta.resx">
+      <DependentUpon>AzuriranjePredmeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AzuriranjeSmera.resx">
+      <DependentUpon>AzuriranjeSmera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AzuriranjeStudenta.resx">
+      <DependentUpon>AzuriranjeStudenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrisanjeIzborneListe.resx">
+      <DependentUpon>BrisanjeIzborneListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrisanjePredmeta.resx">
+      <DependentUpon>BrisanjePredmeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrisanjeStudenta.resx">
+      <DependentUpon>BrisanjeStudenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajIzbornuListu.resx">
+      <DependentUpon>DodajIzbornuListu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajStudenta.resx">
+      <DependentUpon>DodajStudenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodavanjePredmeta.resx">
+      <DependentUpon>DodavanjePredmeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodavanjeSmer.resx">
+      <DependentUpon>DodavanjeSmer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzbrisiSmer.resx">
+      <DependentUpon>IzbrisiSmer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KorisnikMeni.resx">
+      <DependentUpon>KorisnikMeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logovanje.resx">
+      <DependentUpon>Logovanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniAdmin.resx">
+      <DependentUpon>MeniAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoviKorisnik.resx">
+      <DependentUpon>NoviKorisnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Statistika predmeta.resx">
+      <DependentUpon>Statistika predmeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
